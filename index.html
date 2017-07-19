@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link href="style.css" rel="stylesheet"/>
+    <script src='https://unpkg.com/vue'></script>
+
+  </head>
+  <body>
+    <div id="vue-app">
+      <h1>{{ greet('afternoon') }}</h1>
+      <a href="http://google.com" @click.prevent.once="rf(123)">Google.com</a><br><br>
+      <div>
+        <input type="text"  :value="name">
+
+      </div>
+      <p>{{name}}</p>
+      <p>{{job}}</p>
+    </div>
+    <script src='app.js'></script>
+
+  </body>
+</html>
