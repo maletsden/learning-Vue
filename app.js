@@ -2,17 +2,15 @@ var i = 1;
 new Vue({
   el: '#vue-app',
   data: {
-    name: 'Denys',
-    job: "Developer",
-    website: 'http://google.com'
+    name: '',
+    age: ''
   },
   methods: {
-    greet: function (t) {
-      return 'Good ' + t + ', ' + this.name;
+    logName : function () {
+
     },
-    rf: function (a) {
-      console.log(a * i);
-      i+=5;
+    logAge: function () {
+
     }
   }
 });

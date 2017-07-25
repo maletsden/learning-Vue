@@ -8,16 +8,29 @@
 
   </head>
   <body>
-    <div id="vue-app">
-      <h1>{{ greet('afternoon') }}</h1>
-      <a href="http://google.com" @click.prevent.once="rf(123)">Google.com</a><br><br>
-      <div>
-        <input type="text"  :value="name">
 
-      </div>
-      <p>{{name}}</p>
-      <p>{{job}}</p>
+
+
+
+    <div id="vue-app">
+
+      <input type="text" v-model="name"/>
+      <span>{{ name }}</span>
+
+      <p></p>
+
+      <input type="text" v-model='age'/>
+      <span>{{ age }}</span>
+
     </div>
+
+
+
+
+
+
+
+
     <script src='app.js'></script>
 
   </body>
