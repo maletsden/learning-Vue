@@ -5,7 +5,21 @@
     <title></title>
     <link href="style.css" rel="stylesheet"/>
     <script src='https://unpkg.com/vue'></script>
-
+    <style>
+    button{
+      border: 0;
+      padding: 5px;
+      font-size: 15px
+    }
+      .red{
+        background: rgb(255,0,0);
+        color: rgb(0,0,255)
+      }
+      .blue{
+        background: rgb(0,0,255);
+        color: rgb(255,0,0)
+      }
+    </style>
   </head>
   <body>
 
@@ -13,19 +27,26 @@
 
 
     <div id="vue-app">
+      <!--
+      <h2>Example 1</h2>
 
-      <button @click='a++' type="button" name="button"> Add to A </button>
-      <button @click='b++' type="button" name="button"> Add to B </button>
+      <div >
+        <h4>Red</h4>
 
-      <p></p>
+      </div>
 
-      <p> A: {{ a }}</p>
+      <button type="button" v-on:click=' available = !available ' :class='{ red: available }'>
+        Change availiable
+      </button>
+    -->
 
-      <p> B: {{ b }}</p>
+      <h2>Example 2</h2>
 
-      <p> Age + A = {{ addToA }}</p>
+      <button type="button" @click=' red = !red, blue = !blue' :class=' compClasses'>
+        Change availiable
+      </button>
 
-      <p> Age + B = {{ addToB }}</p>
+
     </div>
 
 
