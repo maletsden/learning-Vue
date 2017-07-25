@@ -13,14 +13,16 @@
 
     <div id="vue-app">
 
-      <h1>Conditions</h1>
+      <ul>
+        <li v-for='(girl, age) in girls'>{{ girl.name }} - {{ girl.age }}</li>
+      </ul>
 
-      <button type="button" @click=' error = !error'>Toggle error</button>
 
-      <button type="button" @click='success = !success'>Toggle success</button>
-
-      <p v-show='error'>Therre has been error</p>
-      <p v-show='success'>Success !!!</p>
+      <template v-for='girl in girls'>
+        <div v-for='(val,key) in girl'>
+          <p>{{key}} - {{ val }}</p>
+        </div>
+      </template>
     </div>
 
 
