@@ -14,14 +14,18 @@
 
     <div id="vue-app">
 
-      <input type="text" v-model="name"/>
-      <span>{{ name }}</span>
+      <button @click='a++' type="button" name="button"> Add to A </button>
+      <button @click='b++' type="button" name="button"> Add to B </button>
 
       <p></p>
 
-      <input type="text" v-model='age'/>
-      <span>{{ age }}</span>
+      <p> A: {{ a }}</p>
 
+      <p> B: {{ b }}</p>
+
+      <p> Age + A = {{ addToA }}</p>
+
+      <p> Age + B = {{ addToB }}</p>
     </div>
 
 
